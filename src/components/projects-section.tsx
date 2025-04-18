@@ -8,7 +8,7 @@ export function ProjectsSection() {
   const { theme } = useTheme()
   const [activeFilter, setActiveFilter] = useState("All")
 
-  const categories = ["All", "Frontend", "React", "DeFi & Payments"]
+  const categories = ["All", "Frontend", "NextJS", "DeFi & Payments"]
 
   const projects = [
     {
@@ -17,7 +17,7 @@ export function ProjectsSection() {
       description:
         "Talim is a powerful Learning Management and School Management System platform designed to simplify, manage, and enhance online education and school operations for learners, teachers, parents, and institutions alike.",
       image: "/Talim.svg?height=300&width=400",
-      category: "Frontend",
+      category:["Frontend", "NextJS"],
       overview: [
         "Talim is a comprehensive LMS and school management platform that streamlines course creation, user management, school operations, and progress tracking.",
         "It integrates with modern frontend technologies to provide a seamless and responsive user experience across different user roles like students, teachers, parents, and admins."
@@ -46,7 +46,7 @@ export function ProjectsSection() {
       description:
         "A decentralized payment protocol enabling direct spending of USDT/USDC stablecoins in fiat transactions without pre-conversion, powered by multiple Ethereum EVM chains.",
       image: "/defi-direct-logo.png?height=300&width=400",
-      category: "DeFi & Payments",
+      category: ["Frontend", "NextJS","DeFi & Payments"],
       overview: [
         "DeFi Direct is a non-custodial payment solution bridging crypto and fiat economies.",
         "Users spend USDT/USDC directly from self-custody wallets; merchants receive local currency instantly.",
@@ -80,7 +80,7 @@ export function ProjectsSection() {
   ]
 
   const filteredProjects =
-    activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
+    activeFilter === "All" ? projects : projects.filter((project) => project.category.includes(activeFilter))
 
   return (
     <section id="projects" className="py-12">
