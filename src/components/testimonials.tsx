@@ -10,28 +10,28 @@ export function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Product Manager at TechCorp",
+      name: "Saint Moses",
+      role: "Founder of Talim",
       content:
         "Prince delivered an exceptional website that exceeded our expectations. His attention to detail and ability to translate our vision into a functional, beautiful design was impressive.",
       avatar: "/placeholder.svg?height=80&width=80",
     },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "Founder of StartupX",
-      content:
-        "Working with Prince was a game-changer for our startup. He created a responsive, modern website that perfectly represents our brand and has significantly increased our conversion rates.",
-      avatar: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      id: 3,
-      name: "Olivia Rodriguez",
-      role: "Marketing Director at CreativeAgency",
-      content:
-        "Prince's technical skills combined with his eye for design make him a rare talent. He understood our needs perfectly and delivered a website that has received countless compliments.",
-      avatar: "/placeholder.svg?height=80&width=80",
-    },
+    // {
+    //   id: 2,
+    //   name: "Michael Chen",
+    //   role: "Founder of StartupX",
+    //   content:
+    //     "Working with Prince was a game-changer for our startup. He created a responsive, modern website that perfectly represents our brand and has significantly increased our conversion rates.",
+    //   avatar: "/placeholder.svg?height=80&width=80",
+    // },
+    // {
+    //   id: 3,
+    //   name: "Olivia Rodriguez",
+    //   role: "Marketing Director at CreativeAgency",
+    //   content:
+    //     "Prince's technical skills combined with his eye for design make him a rare talent. He understood our needs perfectly and delivered a website that has received countless compliments.",
+    //   avatar: "/placeholder.svg?height=80&width=80",
+    // },
   ]
 
   const nextTestimonial = () => {
