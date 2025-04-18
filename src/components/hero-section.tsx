@@ -12,7 +12,6 @@ export function HeroSection() {
 
   const fullText = "Shaping the Future of Web Experiences with Blockchain Technology."
 
-
   useEffect(() => {
     if (isTyping) {
       if (typedText.length < fullText.length) {
@@ -52,9 +51,9 @@ export function HeroSection() {
         </h2>
 
         <p className={`mb-8 text-xl ${theme === "light" ? "text-gray-600" : "text-gray-400"}`}>
-  I'm a frontend developer blending clean design with powerful blockchain functionality.  
-  From crafting responsive websites to integrating smart contracts with Solidity, I bring modern, secure, and engaging experiences to life across Web2 and Web3 platforms.
-</p>
+          I&apos;m a frontend developer blending clean design with powerful blockchain functionality.  
+          From crafting responsive websites to integrating smart contracts with Solidity, I bring modern, secure, and engaging experiences to life across Web2 and Web3 platforms.
+        </p>
 
         <div className="mb-8">
           <h3 className={`text-xl font-semibold mb-4 ${theme === "light" ? "text-gray-800" : "text-gray-200"}`}>

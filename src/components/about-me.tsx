@@ -1,6 +1,6 @@
 "use client"
 import { useTheme } from "next-themes"
-import { Code, Heart, Gamepad2, Headphones, BookOpen, Globe } from "lucide-react"
+import { Code, Heart, Gamepad2, Headphones, BookOpen } from "lucide-react"
 
 export function AboutMe() {
   const { theme } = useTheme()
@@ -38,12 +38,12 @@ export function AboutMe() {
           <div>
             <h3 className={`text-xl font-bold mb-4 ${theme === "light" ? "text-gray-900" : "text-white"}`}>Who I Am</h3>
             <p className={`mb-4 ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}>
-              Hi, I’m Prince Akpolo, also known as Ogazboiz. I’m a Frontend Developer and Solidity Developer. I create
-              seamless web experiences and build smart contracts that drive blockchain innovation. I'm always learning, improving,
+              Hi, I&apos;m Prince Akpolo, also known as Ogazboiz. I&apos;m a Frontend Developer and Solidity Developer. I create
+              seamless web experiences and build smart contracts that drive blockchain innovation. I&apos;m always learning, improving,
               and excited to shape the future of decentralized applications.
             </p>
             <p className={`mb-4 ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}>
-              I’m a graduate of Edo State University Uzairue. I started coding during my first year in university, driven by my love
+              I&apos;m a graduate of Edo State University Uzairue. I started coding during my first year in university, driven by my love
               for video games. Over the years, I have gained substantial knowledge in web design and mobile applications, which
               has led me to specialize in blending clean design with powerful blockchain functionality. From crafting responsive
               websites to integrating smart contracts with Solidity, I bring modern, secure, and engaging experiences to life across

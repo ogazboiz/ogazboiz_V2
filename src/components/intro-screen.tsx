@@ -2,6 +2,7 @@
 import { useTheme } from "next-themes"
 import { ArrowRight } from "lucide-react"
 import { useState, useEffect } from "react"
+import Image from "next/image" // Import Image from next/image
 
 interface IntroScreenProps {
   onEnterPortfolio: () => void
@@ -53,10 +54,13 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
       <div className="relative z-10 text-center px-4 max-w-3xl">
         <div className="mb-8 relative inline-block">
           <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#0061E0]/20 mx-auto">
-            <img
-              src="/profile.jpg?height=128&width=128"
+            <Image
+              src="/profile.jpg"
               alt="Prince Akpolo"
+              width={128}
+              height={128}
               className="w-full h-full object-cover"
+              priority // Optional: prioritize loading for above-the-fold image
             />
           </div>
         </div>
@@ -75,7 +79,7 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
         </h3>
 
         <p className={`text-lg mb-12 max-w-2xl mx-auto ${currentTheme === "light" ? "text-gray-600" : "text-gray-400"}`}>
-          Welcome to my space! I'm a Frontend Developer and Solidity Developer, creating seamless web experiences and building smart contracts that drive blockchain innovation. I'm always learning, improving, and excited to shape the future of decentralized applications.
+          Welcome to my space! I&apos;m a Frontend Developer and Solidity Developer, creating seamless web experiences and building smart contracts that drive blockchain innovation. I&apos;m always learning, improving, and excited to shape the future of decentralized applications.
         </p>
 
         <button
@@ -94,9 +98,8 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-sm font-medium hover:underline transition-colors ${
-                currentTheme === "light" ? "text-gray-600 hover:text-[#0061E0]" : "text-gray-400 hover:text-white"
-              }`}
+              className={`text-sm font-medium hover:underline transition-colors ${currentTheme === "light" ? "text-gray-600 hover:text-[#0061E0]" : "text-gray-400 hover:text-white"
+                }`}
             >
               {name}
             </a>
