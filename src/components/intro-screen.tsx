@@ -131,7 +131,7 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
           </span>
           <button
             onClick={handleCopyWallet}
-            className={`mt-2 flex items-center gap-2 text-sm font-mono transition-colors ${currentTheme === "light" ? "text-gray-700 hover:text-[#0061E0]" : "text-gray-300 hover:text-white"
+            className={`mt-2 flex items-center gap-2 text-sm font-mono transition-colors pb-4 ${currentTheme === "light" ? "text-gray-700 hover:text-[#0061E0]" : "text-gray-300 hover:text-white "
               }`}
             title="Copy wallet address"
           >
