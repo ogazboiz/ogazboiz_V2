@@ -5,7 +5,6 @@ import { useState } from "react"
 import { Copy } from "lucide-react"
 import type { ReactNode } from "react"
 import { Navbar } from "./navbar"
-import { ThemeToggle } from "./theme-toggle"
 
 interface PageContainerProps {
   children: ReactNode
@@ -18,7 +17,7 @@ export function PageContainer({ children }: PageContainerProps) {
   const [copied, setCopied] = useState(false) // State for copy feedback
 
   // Your wallet address (replace with your actual address)
-  const walletAddress = "0x2E15bB8aDF3438F66A6F786679B0bBBBF02A75d5"
+  const walletAddress = "0xa479b8c6030cBB01f8E9F6AcB2Ad2C757C81894d"
   // Shortened display (first 6 and last 4 characters)
   const shortWalletAddress = `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
 
@@ -30,20 +29,14 @@ export function PageContainer({ children }: PageContainerProps) {
   }
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${theme === "light" ? "bg-gray-50" : "bg-black"}`}>
-      {/* Animated background gradient */}
-      <div className="fixed inset-0 z-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0061E0] to-[#6A0DAD] animate-gradient"></div>
+    <div className={`min-h-screen transition-colors duration-300 ${theme === "light" ? "bg-gray-50" : "bg-[#0C0A12]"}`}>
+      {/* Soft violet glows for depth */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-48 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-[#8B5CF6] opacity-[0.08] blur-[140px]"></div>
+        <div className="absolute bottom-0 -right-48 w-[600px] h-[600px] rounded-full bg-[#6D28D9] opacity-[0.06] blur-[130px]"></div>
       </div>
 
       <Navbar />
-
-      {/* Only show theme toggle on homepage since navbar is hidden there */}
-      {isHomePage && (
-        <div className="absolute top-6 right-6 md:right-12 z-10">
-          <ThemeToggle />
-        </div>
-      )}
 
       <div
         className={`container relative z-10 mx-auto px-4 md:px-8 lg:px-12 xl:px-24 py-6 ${!isHomePage ? "pt-24" : ""}`}
@@ -60,7 +53,7 @@ export function PageContainer({ children }: PageContainerProps) {
             </span>
             <button
               onClick={handleCopyWallet}
-              className="mt-2 flex items-center gap-2 text-sm font-mono hover:text-[#0061E0] transition-colors"
+              className="mt-2 flex items-center gap-2 text-sm font-mono hover:text-[#8B5CF6] transition-colors"
               title="Copy wallet address"
             >
               <span>{shortWalletAddress}</span>

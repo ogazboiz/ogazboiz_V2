@@ -71,13 +71,13 @@ export function ProjectModal({
   ]
 
   return createPortal(
-    <div className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/100">
+    <div className="fixed inset-0 z-[10000] flex items-center justify-center bg-[#0C0A12]/100">
       <div
         ref={modalRef}
         className={`w-full max-w-[90vw] sm:max-w-[80vw] md:max-w-[560px] lg:max-w-[640px] rounded-xl max-h-[80vh] overflow-hidden bg-gradient-to-b ${
           theme === "light"
             ? "from-white to-gray-50 shadow-xl"
-            : "from-[#111111] to-[#1A1A1A] shadow-xl shadow-black/50"
+            : "from-[#15121C] to-[#1C1826] shadow-xl shadow-black/50"
         } transform transition-all duration-300 scale-95 sm:scale-100 animate-fade-in`}
       >
         <div className="relative">
@@ -88,7 +88,7 @@ export function ProjectModal({
           />
           <button
             onClick={onClose}
-            className="absolute top-2 right-2 sm:top-3 sm:right-3 bg-black/60 rounded-full p-1.5 sm:p-2 text-white hover:bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] transition-all duration-300"
+            className="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#0C0A12]/60 rounded-full p-1.5 sm:p-2 text-white hover:bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] transition-all duration-300"
           >
             <X className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>
@@ -118,7 +118,7 @@ export function ProjectModal({
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-2 sm:px-3 py-1 text-xs sm:text-sm font-medium rounded-t-md transition-all duration-200 ${
                   activeTab === tab.id
-                    ? "bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] text-white"
+                    ? "bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white"
                     : theme === "light"
                       ? "text-gray-500 hover:bg-gray-100"
                       : "text-gray-400 hover:bg-gray-800"
@@ -166,7 +166,7 @@ export function ProjectModal({
                     className={`px-2 py-1 rounded-full text-xs sm:text-sm transition-all duration-200 ${
                       theme === "light"
                         ? "bg-gray-200 text-gray-800 hover:bg-gray-300"
-                        : "bg-[#1A1A1A] text-gray-300 hover:bg-[#2A2A2A]"
+                        : "bg-[#1C1826] text-gray-300 hover:bg-[#26262E]"
                     }`}
                   >
                     {tech}
@@ -193,8 +193,8 @@ export function ProjectModal({
               onClick={onClose}
               className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs sm:text-sm transition-all duration-200 ${
                 theme === "light"
-                  ? "border border-gray-300 text-gray-800 hover:bg-gray-100 hover:border-[#0061E0]"
-                  : "border border-gray-700 text-white hover:bg-gray-800 hover:border-[#6A0DAD]"
+                  ? "border border-gray-300 text-gray-800 hover:bg-gray-100 hover:border-[#8B5CF6]"
+                  : "border border-gray-700 text-white hover:bg-gray-800 hover:border-[#6D28D9]"
               }`}
             >
               Close
@@ -203,7 +203,7 @@ export function ProjectModal({
               href={liveDemoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs sm:text-sm text-white bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] hover:from-[#004BB3] hover:to-[#540886] transition-all duration-200 flex items-center gap-1 sm:gap-2"
+              className="px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs sm:text-sm text-white bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] hover:from-[#004BB3] hover:to-[#540886] transition-all duration-200 flex items-center gap-1 sm:gap-2"
             >
               <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4" />
               Live Demo

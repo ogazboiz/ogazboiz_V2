@@ -35,10 +35,10 @@ export function Portfolio() {
   }
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${theme === "light" ? "bg-gray-50" : "bg-black"}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${theme === "light" ? "bg-gray-50" : "bg-[#0C0A12]"}`}>
       {/* Animated background gradient */}
       <div className="fixed inset-0 z-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0061E0] to-[#6A0DAD] animate-gradient"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6] to-[#6D28D9] animate-gradient"></div>
       </div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-8 lg:px-12 xl:px-24 py-6">

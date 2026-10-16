@@ -3,7 +3,7 @@ import { HomePage } from "@/components/home-page"
 
 export default function Home() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark" storageKey="portfolio-theme-v2">
       <HomePage />
     </ThemeProvider>
   )

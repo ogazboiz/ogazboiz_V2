@@ -15,7 +15,7 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
   const [mounted, setMounted] = useState(false)
   const [copied, setCopied] = useState(false) // State for copy feedback
 
-  const fullText = "Frontend Developer & Smart Contract Developer"
+  const fullText = "Full-Stack & Smart Contract Engineer"
 
   useEffect(() => {
     setMounted(true)
@@ -39,7 +39,7 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
   const currentTheme = theme === "system" ? systemTheme : theme
 
   // Your wallet address (replace with your actual address)
-  const walletAddress = "0x2E15bB8aDF3438F66A6F786679B0bBBBF02A75d5"
+  const walletAddress = "0xa479b8c6030cBB01f8E9F6AcB2Ad2C757C81894d"
   // Shortened display (first 6 and last 4 characters)
   const shortWalletAddress = `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
 
@@ -59,14 +59,14 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative">
-      {/* Background gradient */}
-      <div className="fixed inset-0 z-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0061E0] to-[#6A0DAD] animate-gradient"></div>
+      {/* Soft violet glows for depth */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-48 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-[#8B5CF6] opacity-[0.10] blur-[150px]"></div>
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-3xl">
         <div className="mb-8 relative inline-block">
-          <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#0061E0]/20 mx-auto">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#8B5CF6]/20 mx-auto">
             <Image
               src="/profile.jpg"
               alt="Prince Akpolo"
@@ -84,22 +84,22 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
 
         <h2 className={`text-xl md:text-2xl font-light mb-6 ${currentTheme === "light" ? "text-gray-700" : "text-gray-300"}`}>
           <span className="italic text-gray-500">Also known as</span>{" "}
-          <span className="font-semibold text-[#0061E0]">Ogazboiz</span>
+          <span className="font-semibold text-[#8B5CF6]">Ogazboiz</span>
         </h2>
 
         <h3 className={`text-xl md:text-2xl mb-8 ${currentTheme === "light" ? "text-gray-700" : "text-gray-300"}`}>
           {typedText}
-          <span className="inline-block w-1 h-6 ml-1 bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] animate-blink"></span>
+          <span className="inline-block w-1 h-6 ml-1 bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] animate-blink"></span>
         </h3>
         <p className={`text-lg mb-12 max-w-2xl mx-auto ${currentTheme === "light" ? "text-gray-600" : "text-gray-400"}`}>
-          Welcome to my space! I&apos;m a Frontend Developer and Solidity Developer, creating seamless web experiences and
-          building smart contracts that drive blockchain innovation. I&apos;m always learning, improving, and excited to shape
-          the future of decentralized applications.
+          Welcome to my space! I build web apps and smart contracts, and I like taking a feature from the Solidity or Rust
+          contract all the way to the Next.js frontend people actually use. I&apos;ve won three hackathons on Celo, Somnia and
+          Arbitrum Stylus, I maintain an open-source library called Compose, and right now I&apos;m building Square and GameArena.
         </p>
 
         <button
           onClick={onEnterPortfolio}
-          className="group flex items-center gap-2 px-8 py-4 rounded-xl text-white text-lg bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] hover:opacity-90 transition-all duration-300 transform hover:scale-105 mx-auto"
+          className="group flex items-center gap-2 px-8 py-4 rounded-xl text-white text-lg bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] hover:opacity-90 transition-all duration-300 transform hover:scale-105 mx-auto"
         >
           View Portfolio
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -113,7 +113,7 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-sm font-medium hover:underline transition-colors ${currentTheme === "light" ? "text-gray-600 hover:text-[#0061E0]" : "text-gray-400 hover:text-white"
+              className={`text-sm font-medium hover:underline transition-colors ${currentTheme === "light" ? "text-gray-600 hover:text-[#8B5CF6]" : "text-gray-400 hover:text-white"
                 }`}
             >
               {name}
@@ -131,7 +131,7 @@ export function IntroScreen({ onEnterPortfolio }: IntroScreenProps) {
           </span>
           <button
             onClick={handleCopyWallet}
-            className={`mt-2 flex items-center gap-2 text-sm font-mono transition-colors pb-4 ${currentTheme === "light" ? "text-gray-700 hover:text-[#0061E0]" : "text-gray-300 hover:text-white "
+            className={`mt-2 flex items-center gap-2 text-sm font-mono transition-colors pb-4 ${currentTheme === "light" ? "text-gray-700 hover:text-[#8B5CF6]" : "text-gray-300 hover:text-white "
               }`}
             title="Copy wallet address"
           >

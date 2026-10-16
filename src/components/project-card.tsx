@@ -63,7 +63,7 @@ export function ProjectCard({
 
           <button
             onClick={() => setIsModalOpen(true)}
-            className={`flex items-center gap-2 px-4 py-2 w-fit rounded-xl text-white bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] hover:opacity-90 transition-all duration-300 ${
+            className={`flex items-center gap-2 px-4 py-2 w-fit rounded-xl text-white bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] hover:opacity-90 transition-all duration-300 ${
               isHovered ? "transform translate-y-0 opacity-100" : "transform translate-y-2 opacity-90"
             }`}
           >

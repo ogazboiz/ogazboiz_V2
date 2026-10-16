@@ -42,14 +42,14 @@ export function Navigation() {
     <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
       <div
         className={`flex items-center gap-1 px-2 py-2 rounded-full ${
-          theme === "light" ? "bg-white shadow-lg" : "bg-[#111111] shadow-lg shadow-black/20"
+          theme === "light" ? "bg-white shadow-lg" : "bg-[#15121C] shadow-lg shadow-black/20"
         }`}
       >
         <button
           onClick={() => scrollToSection("home")}
           className={`p-2 rounded-full transition-all duration-300 ${
             activeSection === "home"
-              ? "bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] text-white"
+              ? "bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white"
               : "text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800"
           }`}
           aria-label="Home section"
@@ -60,7 +60,7 @@ export function Navigation() {
           onClick={() => scrollToSection("about")}
           className={`p-2 rounded-full transition-all duration-300 ${
             activeSection === "about"
-              ? "bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] text-white"
+              ? "bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white"
               : "text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800"
           }`}
           aria-label="About section"
@@ -71,7 +71,7 @@ export function Navigation() {
           onClick={() => scrollToSection("projects")}
           className={`p-2 rounded-full transition-all duration-300 ${
             activeSection === "projects"
-              ? "bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] text-white"
+              ? "bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white"
               : "text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800"
           }`}
           aria-label="Projects section"
@@ -82,7 +82,7 @@ export function Navigation() {
           onClick={() => scrollToSection("experience")}
           className={`p-2 rounded-full transition-all duration-300 ${
             activeSection === "experience"
-              ? "bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] text-white"
+              ? "bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white"
               : "text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800"
           }`}
           aria-label="Experience section"
@@ -93,7 +93,7 @@ export function Navigation() {
           onClick={() => scrollToSection("testimonials")}
           className={`p-2 rounded-full transition-all duration-300 ${
             activeSection === "testimonials"
-              ? "bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] text-white"
+              ? "bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] text-white"
               : "text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800"
           }`}
           aria-label="Testimonials section"

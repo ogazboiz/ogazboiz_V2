@@ -12,46 +12,49 @@ export function AboutMe() {
   ]
 
   const webSkills = [
-    { name: "HTML/CSS", level: 90 },
-    { name: "JavaScript", level: 85 },
-    { name: "React", level: 80 },
-    { name: "TypeScript", level: 75 },
-    { name: "Next.js", level: 70 },
-    { name: "Tailwind CSS", level: 85 },
+    { name: "React", level: 90 },
+    { name: "Next.js", level: 90 },
+    { name: "TypeScript", level: 88 },
+    { name: "JavaScript", level: 88 },
+    { name: "Tailwind CSS", level: 90 },
+    { name: "Redux / RTK Query", level: 85 },
+    { name: "Node.js", level: 80 },
+    { name: "PostgreSQL", level: 70 },
   ]
 
   const web3Skills = [
-    { name: "Solidity", level: 60 },
-    { name: "Web3.js", level: 65 },
-    { name: "Ethers.js", level: 60 },
-    { name: "Hardhat", level: 55 },
-    { name: "MetaMask Integration", level: 70 },
+    { name: "Solidity", level: 85 },
+    { name: "Rust (Stylus / Soroban / ink!)", level: 75 },
+    { name: "Foundry", level: 80 },
+    { name: "Hardhat", level: 75 },
+    { name: "wagmi / viem", level: 85 },
+    { name: "ethers.js", level: 75 },
+    { name: "Privy / MiniPay", level: 80 },
   ]
 
   return (
     <section id="about" className="py-12">
       <h2 className={`text-3xl font-bold mb-8 ${theme === "light" ? "text-gray-900" : "text-white"}`}>About Me</h2>
 
-      <div className={`rounded-3xl p-6 md:p-8 ${theme === "light" ? "bg-white shadow-lg" : "bg-[#111111]"}`}>
+      <div className={`rounded-3xl p-6 md:p-8 ${theme === "light" ? "bg-white shadow-lg" : "bg-[#15121C]"}`}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Personal Info */}
           <div>
             <h3 className={`text-xl font-bold mb-4 ${theme === "light" ? "text-gray-900" : "text-white"}`}>Who I Am</h3>
             <p className={`mb-4 ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}>
-              Hi, I&apos;m Prince Akpolo, also known as Ogazboiz. I&apos;m a Frontend Developer and Solidity Developer. I create
-              seamless web experiences and build smart contracts that drive blockchain innovation. I&apos;m always learning, improving,
-              and excited to shape the future of decentralized applications.
+              Hi, I&apos;m Prince Akpolo, also known as Ogazboiz. I&apos;m a full-stack and smart contract developer, which really
+              just means I like building the whole thing: the Solidity or Rust contracts underneath and the Next.js frontend on
+              top. I care about actually shipping, so I take features all the way to production on Vercel and Railway.
             </p>
             <p className={`mb-4 ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}>
-              I&apos;m a graduate of Edo State University Uzairue. I started coding during my first year in university, driven by my love
-              for video games. Over the years, I have gained substantial knowledge in web design and mobile applications, which
-              has led me to specialize in blending clean design with powerful blockchain functionality. From crafting responsive
-              websites to integrating smart contracts with Solidity, I bring modern, secure, and engaging experiences to life across
-              Web2 and Web3 platforms.
+              I studied Computer Science at Edo State University Uzairue, and I got into coding in my first year because I loved
+              video games. Since then I&apos;ve worked on social, fintech, real estate and gaming products, including Square (a
+              social app for meeting people), WorldStreet (a trading app) and GameArena. Along the way I&apos;ve won three
+              hackathons on Celo, Somnia and Arbitrum Stylus, and I maintain an open-source smart contract library called Compose.
             </p>
             <p className={`mb-4 ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}>
-              My goal is to continue improving, expand my skills in both frontend and smart contract development, and shape the
-              future of the web.
+              Mostly I just like building things that work well and feel good to use, and getting a little better at it with
+              every project.
             </p>
 
             <h3
@@ -95,7 +98,7 @@ export function AboutMe() {
                   <div
                     key={skill.name}
                     className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 ${
-                      theme === "light" ? "bg-gray-200 text-gray-900" : "bg-[#1A1A1A] text-white"
+                      theme === "light" ? "bg-gray-200 text-gray-900" : "bg-[#1C1826] text-white"
                     } hover:transform hover:scale-105`}
                   >
                     <Code className={`h-4 w-4 ${theme === "light" ? "text-gray-600" : "text-gray-400"}`} />

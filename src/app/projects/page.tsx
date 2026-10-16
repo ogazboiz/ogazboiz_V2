@@ -3,7 +3,7 @@ import { ProjectsPage } from "@/components/projects-page"
 
 export default function Projects() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark" storageKey="portfolio-theme-v2">
       <ProjectsPage />
     </ThemeProvider>
   )

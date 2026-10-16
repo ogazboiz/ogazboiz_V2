@@ -49,10 +49,10 @@ export function Testimonials() {
       </h2>
 
       <div className="relative">
-        <div className={`rounded-3xl p-6 md:p-8 ${theme === "light" ? "bg-white shadow-lg" : "bg-[#111111]"}`}>
+        <div className={`rounded-3xl p-6 md:p-8 ${theme === "light" ? "bg-white shadow-lg" : "bg-[#15121C]"}`}>
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="md:w-1/4 flex flex-col items-center md:items-start">
-              <div className="w-16 h-16 rounded-full overflow-hidden mb-3 border-2 border-[#0061E0]/20">
+              <div className="w-16 h-16 rounded-full overflow-hidden mb-3 border-2 border-[#8B5CF6]/20">
                 <img
                   src={testimonials[activeIndex].avatar || "/placeholder.svg"}
                   alt={testimonials[activeIndex].name}
@@ -72,7 +72,7 @@ export function Testimonials() {
             <div className="md:w-3/4 relative">
               <Quote
                 className={`absolute -top-4 -left-4 w-8 h-8 opacity-20 ${
-                  theme === "light" ? "text-[#0061E0]" : "text-[#6A0DAD]"
+                  theme === "light" ? "text-[#8B5CF6]" : "text-[#6D28D9]"
                 }`}
               />
               <p className={`text-base md:text-lg italic ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}>
@@ -88,7 +88,7 @@ export function Testimonials() {
                 onClick={() => setActiveIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   activeIndex === index
-                    ? "bg-gradient-to-r from-[#0061E0] to-[#6A0DAD] w-6"
+                    ? "bg-gradient-to-r from-[#8B5CF6] to-[#6D28D9] w-6"
                     : theme === "light"
                       ? "bg-gray-300"
                       : "bg-gray-700"
@@ -102,8 +102,8 @@ export function Testimonials() {
         <button
           onClick={prevTestimonial}
           className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-10 h-10 rounded-full flex items-center justify-center ${
-            theme === "light" ? "bg-white shadow-lg text-gray-800" : "bg-[#1A1A1A] text-white"
-          } hover:bg-gradient-to-r hover:from-[#0061E0] hover:to-[#6A0DAD] hover:text-white transition-all duration-300`}
+            theme === "light" ? "bg-white shadow-lg text-gray-800" : "bg-[#1C1826] text-white"
+          } hover:bg-gradient-to-r hover:from-[#8B5CF6] hover:to-[#6D28D9] hover:text-white transition-all duration-300`}
           aria-label="Previous testimonial"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -112,8 +112,8 @@ export function Testimonials() {
         <button
           onClick={nextTestimonial}
           className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-10 h-10 rounded-full flex items-center justify-center ${
-            theme === "light" ? "bg-white shadow-lg text-gray-800" : "bg-[#1A1A1A] text-white"
-          } hover:bg-gradient-to-r hover:from-[#0061E0] hover:to-[#6A0DAD] hover:text-white transition-all duration-300`}
+            theme === "light" ? "bg-white shadow-lg text-gray-800" : "bg-[#1C1826] text-white"
+          } hover:bg-gradient-to-r hover:from-[#8B5CF6] hover:to-[#6D28D9] hover:text-white transition-all duration-300`}
           aria-label="Next testimonial"
         >
           <ChevronRight className="w-5 h-5" />

@@ -3,7 +3,7 @@ import { ExperiencePage } from "@/components/experience-page"
 
 export default function Experience() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark" storageKey="portfolio-theme-v2">
       <ExperiencePage />
     </ThemeProvider>
   )
