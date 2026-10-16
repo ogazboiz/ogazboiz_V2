@@ -19,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Akpolo Prince (Ogazboiz) — Full-Stack & Smart Contract Engineer",
+  title: "Akpolo Prince (Ogazboiz) · Full-Stack & Smart Contract Engineer",
   description:
     "Portfolio of Prince Akpolo (Ogazboiz), a full-stack and smart contract engineer building web apps and decentralized systems.",
 };
